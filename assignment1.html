@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>assignment</title>
+<script type = "text/javascript">
+	var array = [[1,4,5,8],
+				 [1,4,5,7],
+				 [3,4,5,6],
+				 [3,7,9,3]];
+	outputArray(array);
+	function outputArray(array)
+    {
+	var x=array.length;
+	document.write("[");
+        for ( var i in array ) 
+		{
+			document.write("[");
+			for ( var j in array[ i ] )
+			{
+                 document.write( array[ i ][ j ]);
+				 if(j!=x-1)
+				 document.write(", ");
+				
+			}
+			document.write("]");
+			if(i!=x-1)
+			document.write(", ");
+			
+		}
+		
+	document.write("]");
+	}
+</script>
+</head>
+<body>
+</body>
+</html>
